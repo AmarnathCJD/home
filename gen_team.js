@@ -132,7 +132,20 @@ data.forEach((member) => {
           loading="lazy"
         />
         <div class="social">
-          <a href="${member.linkedin}"><i class="bi bi-linkedin"></i></a>
+          ${
+            member.github
+              ? `<a href="${member.github}">
+                <i class="bi bi-github"></i>
+              </a>`
+              : ""
+          }
+          ${
+            member.linkedin
+              ? `<a href="${member.linkedin}">
+                <i class="bi bi-linkedin"></i>
+              </a>`
+              : ""
+          }
         </div>
       </div>
       <div class="member-info">
