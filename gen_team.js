@@ -126,7 +126,7 @@ data.forEach((member) => {
     <div class="member">
       <div class="member-img">
         <img
-          src="/team-photos-compressed/${member.imagePath}"
+          src="./team-photos-compressed/${member.imagePath}"
           class="img-fluid"
           alt=""
           loading="lazy"
