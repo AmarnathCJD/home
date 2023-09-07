@@ -26,7 +26,7 @@ hr {
 }
 
 a:hover {
-  color: #4285f1;
+  color: #4285f4;
   text-decoration: none;
 }
 
@@ -49,7 +49,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #2487ce;
+  background: #4285f4;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -165,6 +165,14 @@ h6 {
 /**
 * Desktop Navigation 
 */
+
+.container {
+  background-image: url('mine.jpg');
+  min-height: 5px;
+  background-repeat: repeat-y;
+}
+
+
 .navbar {
   padding: 0;
 }
@@ -188,7 +196,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 14px;
-  color: #16507b;
+  color: black;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -254,7 +262,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #2487ce;
+  color: #4285f4;
 }
 
 .navbar .dropdown:hover>ul {
@@ -290,7 +298,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #124265;
+  color: #4285f4;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -398,11 +406,147 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+/* h1 {
+  margin-top: 50px;
+  margin-left: 200px;
+  font-size: 60px;
+  font-family: 'Karla', sans-serif;
+  font-weight: lighter;
+} */
+
+.slider-frame {
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 1000px;
+}
+
+/*---------- SLIDE ANIMATION --------------*/
+
+
+@keyframes slide_animation {
+  0% {
+    left: 0px;
+  }
+
+  10% {
+    left: 0px;
+  }
+
+  20% {
+    left: 1200px;
+  }
+
+  30% {
+    left: 1200px;
+  }
+
+  40% {
+    left: 2400px;
+  }
+
+  50% {
+    left: 2400px;
+  }
+
+  60% {
+    left: 1200px;
+  }
+
+  70% {
+    left: 1200px;
+  }
+
+  80% {
+    left: 0px;
+  }
+
+  90% {
+    left: 0px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes slide_animation {
+  0% {
+    left: 0px;
+  }
+
+  10% {
+    left: 0px;
+  }
+
+  20% {
+    left: 1200px;
+  }
+
+  30% {
+    left: 1200px;
+  }
+
+  40% {
+    left: 2400px;
+  }
+
+  50% {
+    left: 2400px;
+  }
+
+  60% {
+    left: 1200px;
+  }
+
+  70% {
+    left: 1200px;
+  }
+
+  80% {
+    left: 0px;
+  }
+
+  90% {
+    left: 0px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.slide-images {
+  width: 2600px;
+  height: 800px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  animation-name: slide_animation;
+  -webkit-animation-duration: 33s;
+  animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.img-container {
+  height: 800px;
+  width: 1500px;
+  position: relative;
+  float: left;
+}
+
 #hero {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -451,7 +595,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #3194db;
+  background: #ea4335;
 }
 
 #hero .icon-boxes {
@@ -526,6 +670,7 @@ h6 {
 @media (max-width: 768px) {
   .hero-logo {
     max-width: 90%;
+    vertical-align: left;
   }
 }
 
